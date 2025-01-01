@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warung M'Bari Nyanyat</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            text-decoration: none;
+            list-style: none;
+        }
+
+        body {
+            background: url('images/.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            background-color: #bb8c94;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            overflow-x: hidden;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            padding-top: 8rem;
+            padding-bottom: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        header {
+            font-family: 'Poppins', sans-serif;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            right: 0;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1.5rem 5rem;
+            background-color: rgb(255, 238, 218); /* Semi-transparent background */
+        }
+
+        .logo {
+            font-family: 'Poppins', sans-serif;
+            color: #3e2e2e;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .navmenu {
+            display: flex;
+        }
+
+        .navmenu a {
+            margin: 0 1.5rem;
+            color: #3e2e2e;
+            font-weight: 500;
+            transition: all 0.3s;
+            font-weight: bold;
+        }
+
+        .navmenu a:hover {
+            color: #a52a2a;
+        }
+        
+
+        .intro-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 2rem;
+            text-align: center;
+            font-weight: bold
+        }
+
+        .intro-section img {
+            width: 300px;
+            height: auto;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            opacity: 0;
+            transition: opacity 2s ease-in-out;
+        }
+
+        section {
+            width: 100%;
+            padding: 2rem;
+            background: rgb(255, 238, 218);
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.6s ease-in-out;
+            
+        }
+        
+
+        .favorites {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            justify-content: center;
+        }
+
+        .favorite-item {
+            width: 200px;
+            justify-content: center;
+        
+        }
+
+        .favorite-item img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 0.5rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            justify-content: center;
+            
+        }
+        
+        h2, h3 {
+            color: #a52a2a;
+            margin-bottom: 1rem;
+        }
+
+        p, ul {
+            color: #3e2e2e;
+            line-height: 1.6;
+            text-justify: center;
+    
+        }
+
+        footer {
+            padding: 1rem;
+            background-color: rgb(255, 238, 218);
+            width: 100%;
+            text-align: center;
+        }
+
+        footer p {
+            color: #3e2e2e;
+        }
+        
+        .dropbtn {
+        margin: 0 1.5rem;    
+        background-color: rgb(255, 238, 218);
+        color: #3e2e2e;
+        padding: 0px;
+        font-size: 16px;
+        border: none;
+        font-weight: bold
+            
+        }
+
+        .dropdown {
+        position: relative;
+        display: inline-block;
+        }
+
+        .dropdown-content {
+        display: none;    
+        position: absolute;
+        background-color: #bb8c94;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        }
+
+        .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    
+        }
+        .dropdown-content a:hover {background-color: beige;}
+
+        .dropdown:hover .dropdown-content {display:block;}
+
+        .dropdown:hover .dropbtn {background-color: rgb(255, 238, 218) ;}
+        
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <header>
+        <a href="#" class="logo">    
+          <img src="images/logo2.png" alt="Warung M'Bari Nyanyat Logo" style="height: 50px; vertical-align: middle;"> Warung M'Bari Nyanyat
+            </a>
+            <nav class="navmenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">About</a></li>
+        <div class="dropdown">
+        <button class="dropbtn">Menu</button>
+        <div class="dropdown-content">
+        <a href="foods.html">Foods</a>
+        <a href="beverages.html">Beverages</a>
+        <a href="specials.html">Specials</a>
+  </div>
+</div>
+        <li><a href="contactus.html">Contact Us</a></li>
+            </nav>
+        </header>
+
+        <main class="content">
+            <div class="intro-section" id="about">
+                <img src="images/pic1.jpg" alt="Picture of Warung M'Bari Nyanyat">
+                <p>
+                 "A community" <br>
+                </p>
+            </div>
+          
+            
+        <section id="favorites">
+                <h2> Pictures of Warung M'Bari Nyanyat </h2>
+                <div class="favorites">
+                    <div class="favorite-item">
+                        <img src="images/pic5.png" alt="Wind Hole">
+                        <h3></h3>
+                        <p></p>
+                    </div>
+                    <div class="favorite-item">
+                        <img src="images/pic4.png" alt="CDIM1105A">
+                        <h3></h3>
+                        <p></p>
+                    </div>
+                    <div class="favorite-item">
+                        <img src="images/pic2.jpg" alt="26536">
+                        <h3></h3>
+                        <p> </p>
+                    </div>
+                    <div class="favorite-item">
+                        <img src="images/pic6.png" alt="UND">
+                        <h3></h3>
+                        <p></p>
+                    </div>
+                </div>
+            
+            <p>
+                 Warung M’Bari Nyanyat began as a small business in 2021, operating from a modest mini stall 
+at Pantai Kenangan, 89700 Bongawan, Sabah. With a vision to bring flavorful, home-cooked 
+meals to the local community, it quickly gained the support from its customers. In 2022, after 
+experiencing steady growth, Warung M’Bari Nyanyat moved to a larger, more permanent 
+location which is their home yard at Kampung Silat, Jalan Pantai Kenangan, 89700 Bongawan,
+Sabah where they created a welcoming space that includes comfortable outdoor seating for 
+their guests to enjoy their meals in a relaxed, fresh-air environment. Specializing in a variety 
+of fried foods, they focus on delivering freshly prepared, delicious dishes that bring warmth 
+and satisfaction with every bite. As a family-run business, they continue to prioritize quality, 
+community, and the joy of sharing food with loved ones, staying true to our roots while 
+expanding to serve even more customers. <br>
+                </p>
+            
+            
+            
+            </section>    
+                
+        </main>    
+        <footer>
+            <p>© 2024 Warung M'Bari Nyanyat </p>
+        </footer>
+    </div>
+
+    <script>
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            });
+        });
+
+        // Fade in images and sections on scroll
+        window.addEventListener('scroll', function() {
+            const introImg = document.querySelector('.intro-section img');
+            const sections = document.querySelectorAll('section');
+            
+            // Fade in image
+            if (isInViewport(introImg)) {
+                introImg.style.opacity = 1;
+            }
+
+            // Fade in sections
+            sections.forEach(section => {
+                if (isInViewport(section)) {
+                    section.style.opacity = 1;
+                    section.style.transform = 'translateY(0)';
+                }
+            });
+        });
+
+        function isInViewport(el) {
+            const rect = el.getBoundingClientRect();
+            return rect.top <= window.innerHeight && rect.bottom >= 0;
+        }
+    </script>
+</body>
+</html>

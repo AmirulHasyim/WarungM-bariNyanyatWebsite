@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warung M'Bari Nyanyat's Website</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            text-decoration: none;
+            list-style: none;
+        }
+
+        body {
+            background: url('images/.png') no-repeat center center fixed;
+            background-size: cover;
+            color: #3e2e2e;
+        }
+
+        header {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            right: 0;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1.5rem 5rem;
+            background-color: rgb(255, 238, 218); /* Semi-transparent background */
+        }
+
+        .logo {
+            color: #3e2e2e;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .navmenu {
+            display: flex;
+        }
+
+        .navmenu a {
+            margin: 0 1.5rem;
+            color: #3e2e2e;
+            font-weight: 500;
+            transition: all 0.3s;
+            font-weight: bold;
+        }
+
+        .navmenu a:hover {
+            color: #a52a2a;
+        }
+
+        .home {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 100vh;
+            padding: 8rem 5rem 2rem 5rem;
+            background-color: #bb8c94 ;  
+        }
+
+        .home-text {
+            max-width: 50%;
+        }
+
+        .home-text h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            color: black;
+            margin-bottom: 0.5rem;
+        }
+
+        .home-text h3 {
+            font-size: 2rem;
+            color: #3e2e2e;
+            margin-bottom: 1rem;
+        }
+        
+        .home-text h2 {
+            font-size: 3rem;
+            font-weight: bold;
+            color: black;
+            margin-bottom: 0.5rem;
+        }
+        .home-text h4 {
+            font-size: 2rem;
+            font-weight: bold;
+            color: black;
+            margin-bottom: 0.5rem;
+        }
+        
+        
+
+        .home-text p {
+            font-size: 1.2rem;
+            color: #3e2e2e;
+            margin-bottom: 2rem;
+        }
+
+        .home-img img {
+            width: 300%;
+            height: 300%;
+            max-width: 550px;
+            border-radius: 10px;
+        }
+        
+     .dropbtn {
+        margin: 0 1.5rem; 
+        background-color: rgb(255, 238, 218); 
+        color: #3e2e2e;
+        padding: 0px;
+        font-size: 16px;
+        border: none;
+        font-weight: bold
+         
+            
+            
+        }
+
+        .dropdown {
+        position: relative;
+        display: inline-block;
+        }
+
+        .dropdown-content {
+        display: none;    
+        position: absolute;
+        background-color: #bb8c94;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        }
+
+        .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    
+        }
+        .dropdown-content a:hover {background-color: beige;}
+
+        .dropdown:hover .dropdown-content {display:block;}
+
+        .dropdown:hover .dropbtn {background-color: rgb(255, 238, 218) ;}
+        
+        
+         .facebook-icon{
+            background-color: royalblue;
+            color: white;
+            display: inline-flex; /* Centers the icon inside the button */
+    align-items: center;
+    justify-content: center;
+    width: 70px; /* Ensures square shape */
+    height: 70px; /* Ensures square shape */
+    border-radius: 50%; /* Makes the buttons circular */
+    font-size: 30px; /* Adjust the icon size for better fit */
+    margin-right: 15px; /* Adjusts spacing between icons */
+    color: white; /* Icon color */
+        }
+        
+        .tiktok-icon{
+             background-color: black;
+            color: white;
+            display: inline-flex; /* Centers the icon inside the button */
+    align-items: center;
+    justify-content: center;
+    width: 70px; /* Ensures square shape */
+    height: 70px; /* Ensures square shape */
+    border-radius: 50%; /* Makes the buttons circular */
+    font-size: 30px; /* Adjust the icon size for better fit */
+    margin-right: 15px; /* Adjusts spacing between icons */
+    color: white; /* Icon color */
+        }
+        
+        .location-icon{
+            background-color: red;
+            color: white;
+            display: inline-flex; /* Centers the icon inside the button */
+    align-items: center;
+    justify-content: center;
+    width: 70px; /* Ensures square shape */
+    height: 70px; /* Ensures square shape */
+    border-radius: 50%; /* Makes the buttons circular */
+    font-size: 30px; /* Adjust the icon size for better fit */
+    margin-right: 15px; /* Adjusts spacing between icons */
+    color: white; /* Icon color */
+        }
+        
+        .facebook-icon:hover,
+.tiktok-icon:hover,
+.location-icon:hover {
+    opacity: 0.8; /* Slightly dims the button for a hover effect */
+    cursor: pointer; /* Changes cursor to indicate interactivity */
+}
+        
+    </style>
+</head>
+<body>
+    <header>
+    <a href="#" class="logo">
+        <img src="images/logo2.png" alt="Warung M'Bari Nyanyat Logo" style="height: 50px; vertical-align: middle;">
+        Warung M'Bari Nyanyat
+    </a>
+    <nav class="navmenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">About</a></li>
+        <div class="dropdown">
+        <button class="dropbtn">Menu</button>
+        <div class="dropdown-content">
+        <a href="foods.html">Foods</a>
+        <a href="beverages.html">Beverages</a>
+        <a href="specials.html">Specials</a>
+  </div>
+</div>
+        <li><a href="contactus.html">Contact Us</a></li>
+            </nav>
+        </header>
+
+
+
+    <section class="home">
+        <div class="home-img">
+            <img src="images/logo2.png" alt="My Picture">
+        </div>
+        <div class="home-text">
+            <h4>Stay in touch with us!</h4>
+            <h2>Warung M'Bari Nyanyat</h2>
+            <h3>A Family Restaurant.</h3>
+            <p>Our WhatsApp! <a href="https://wa.me/601139223128">+60 11-3922 3128</a></p>
+
+            
+             <a class= "facebook-icon" href="https://www.facebook.com/warungmembarinyanyat/?locale=ms_MY">
+     <ion-icon name="logo-facebook"></ion-icon>
+    </a>
+        <a class= "tiktok-icon" href="https://www.tiktok.com/@warungmbarinyanyat?_t=8shle5o5mYq&_r=1">
+     <ion-icon name="logo-tiktok"></ion-icon>
+    </a>
+        
+         <a class= "location-icon" href="https://maps.app.goo.gl/uyeA1hFqidycAB8T8">
+     <ion-icon name="navigate-outline"></ion-icon>
+    </a>
+        
+            
+        </div>
+    </section>
+    
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+</body>
+</html>
